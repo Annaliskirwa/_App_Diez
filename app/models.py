@@ -13,6 +13,7 @@ class Comment(db.Model):
     comment = db.Column(db.String())
     #commentor 
 
-class User:
-    id
-    name
+class User(db.Model):
+    __tablename__ = "comments"
+    id = db.Column(db.Integer, primary_key = True)
+    name = db.Column(db.String(255))
