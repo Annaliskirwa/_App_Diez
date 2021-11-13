@@ -10,9 +10,6 @@ class Quotes(db.Model):
     def __repr__(self):
         return f'Quotes {self.title}'
 
-    def another(self):
-        return ("Another one")
-
 class Comment(db.Model):
     __tablename__ = "comments"
     id = db.Column(db.Integer, primary_key = True)
